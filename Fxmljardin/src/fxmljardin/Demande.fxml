@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmljardin.DemandeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="34.0" text="Demande">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescriptionDemande" layoutX="134.0" layoutY="131.0" prefHeight="200.0" prefWidth="332.0" />
+      <Label layoutX="25.0" layoutY="99.0" text="nom demande" />
+      <Label layoutX="25.0" layoutY="131.0" text="description" />
+      <Button fx:id="btnDemander" layoutX="141.0" layoutY="345.0" mnemonicParsing="false" onAction="#confirmerDemande" prefHeight="25.0" prefWidth="100.0" text="CONFIRMER" />
+      <Button fx:id="btnAnnuler" layoutX="251.0" layoutY="345.0" mnemonicParsing="false" onAction="#annuler" prefHeight="25.0" prefWidth="100.0" text="ANNULER" />
+      <Button fx:id="btnConsulter" layoutX="361.0" layoutY="345.0" mnemonicParsing="false" onAction="#consultation" prefHeight="25.0" prefWidth="100.0" text="CONSULTER" />
+      <TextField fx:id="txtNomdemande" layoutX="134.0" layoutY="95.0" prefHeight="25.0" prefWidth="332.0" />
+      <ImageView fx:id="imghome" fitHeight="50.0" fitWidth="50.0" layoutX="466.0" layoutY="24.0" onMouseClicked="#gohome" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

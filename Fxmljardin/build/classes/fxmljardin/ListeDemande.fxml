@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmljardin.ListeDemandeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="16.0" text="Liste Des Demandes">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imghome" fitHeight="50.0" fitWidth="50.0" layoutX="509.0" layoutY="14.0" onMouseClicked="#gohome" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgreturn" fitHeight="50.0" fitWidth="50.0" layoutX="27.0" layoutY="23.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="lstDemande" editable="true" layoutX="25.0" layoutY="96.0" prefHeight="240.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="champNom" prefWidth="124.0" text="NomDemande" />
+            <TableColumn fx:id="champStatut" prefWidth="123.0" text="Statut" />
+            <TableColumn fx:id="description" prefWidth="179.0" text="Description" />
+            <TableColumn fx:id="champReponse" prefWidth="123.0" text="Reponse" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="editer" fitHeight="50.0" fitWidth="50.0" layoutX="459.0" layoutY="338.0" onMouseClicked="#editer" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="delete" fitHeight="50.0" fitWidth="50.0" layoutX="536.0" layoutY="338.0" onMouseClicked="#supprimer" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtNom" layoutX="33.0" layoutY="363.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="txtDescription" layoutX="223.0" layoutY="363.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="63.0" layoutY="345.0" text="Nom Demande" />
+      <Label layoutX="241.0" layoutY="345.0" text="Description" />
+      <TextField fx:id="search" layoutX="92.0" layoutY="64.0" />
+      <Label layoutX="38.0" layoutY="68.0" text="Search" />
+   </children>
+</AnchorPane>
